@@ -1,0 +1,226 @@
+h1{
+    Sadece bu h1 etiketini çek
+}
+
+.class{
+    Classı class olan her şeyi çek
+}
+
+#id{
+    Id'si id olan bütün elmanları çek
+}
+
+.class , #id{
+    Classı class olan her şeyi çek vew Id'si id olan bütün elmanları çek
+}
+
+important etiketi : Farklı bir style ezmesin diye kulllanılır
+
+headde de alttaki üstekini ezer
+
+opacity : Saydamlık derecesi
+
+
+
+renkleri 3 şekilde verirsin
+
+1. Direkt renk yazarak
+    color şu şu diye
+2. rgb Değeri vererek
+    rgb() ve rgba (rgba içinde saydamlık değerini de kapsıyor)
+3. Hegzadesimal değer vererek 
+    color #ffff Falan diye
+
+
+Background konusu
+
+Background color ı var
+Background imagesi var 
+Background-size gelip cover yaparsan görsel kendini tanımlı bölgeye doldurur
+no-repeat özelliği de tekranrını engelliyor
+position yerini gösteriyo
+attachment da ekranda nasıl bir yere sahip onu belirtiyo
+istersen bir arada yazabiliyorsun
+
+Misal
+background: url("images/indir\ \(1\).jfif") no-repeat right bottom fixed;
+
+Border mevzusu
+
+Aynı background gibi tanımlanabiliyo 
+-color , style , witdh , heigth , left right gibi gölgelere özel de tanımlanabiliyor
+-radius da border'ın köşelerini yumuşatıyor
+
+
+max-width diye bir olay var siz max değeri ayarloysunuz ve ekran küçülünce 
+bilgisayar onu ekrana sığacak şekilde kendisi baştan ayarlıyor
+
+display özelliği olan inline-block özelliği hem witdh ve heigth vermemizi sağlıyor
+hem de gelen sonraki eleman aynı inline gibi yanına geliyor
+linklerde falan tam üstüne gelmesenk de çalışması için kullanışı arttırmak için kullnaılıyor
+
+
+margin ve pedding mevzusu 
+margin : border ile dış ortam arasındaki boşluğu temsileder
+padding : border ile content arasındaki boşluğu temsileder
+
+border ise margin ve padding'in arasında kalmış ve istersek bir değer verebiliceğimiz
+kısımdır. olmazla olmadiye bir durum yok 
+
+!! ama margin padding biraz mecburi gibi bir olay var o yüzden dikkat edilmesi gereken bir durum !!
+
+Text mevzusu
+
+Yazıları sıralama şekillendirme ve yerlerini ayarlama muhabbetleri var daha güzel bir görünüm için
+
+letter-spacing: 1px; : sanırım harfler arası boşluğu arttırıyo
+        
+text-decoration: line-through    none   ; : textin görünümünü değiştirebiliyoruz
+
+text-transform: uppercase; : Yazıların büyülüp küçülmesini sağlıyoruz
+
+Font mevzusu
+İstersen default istersen pcdeki istersen de internetteki fontları çekebilirsin(googel fonts)
+link oluşturup heade ekliyorsun ve işlem bitiyo font-family ile de font değiştiriyon
+
+İstersen de font'un size , style ve weight'ini değitirebiliyon bu da tasarımı güzelleştiriyo
+
+line-heigth diye bir durum var bu da yazıların arasındaki boşluğu ayarlamak için kullnaılıyor
+
+
+Uzunluk mevzusu
+
+uzunluğu sabit bir sayı verebilirsin px , mm falan gibi
+istersen de bir oran verebilirsin em , rem , %
+oran responsive tasarım için önemlidir
+
+
+Eklenti mevzusu
+Eğer farklı yapılar kullanmak isteseniz sitede cdnjs e gidip o eklentinin url'ini
+link ile projeye bağlayıp ardından kullanıma hazır hale getitrebilirsiniz
+
+: pseudo mevzusu
+
+Evetn ekleyebiliyosun kısacası üstüne gelme ayrılma çıkma bastın sonra ne oldu gibi
+Bu gibi durumlar da tasarımı iyi hale getiriyor
+
+:: Aynısının bir farklısı dah farklı işlemler yapıyor
+
+Ardından ekledğiniz yapıda size neyi nasıl kullanıcağınız belirtilir 
+talimatları uygulayıp işlemlerinize davam edebilirsiniz
+
+nth child mevzusu
+Olay şu alt alta eleman içeren sistemlerde (menü vb.)
+bir veya birden çok elemanı seçmemizi sağlıyor
+
+overflow mevzusu
+İçine yerleşen content eğer taşma yapıyorsa bu durum gerçekleyo
+overflow yazıp uygun case'i seçerek durumdan kurtuluyoruz
+
+position mevzusu
+birden çok hali var ama hepsi yerleştirme için çalışıyor
+
+-fixed sayfaya direkt yapıştırıp hareket etsen de ekranda sabit kalmasını sağlıyor
+ve istediğin yere de hareket ettirebilmeni sağlıyor
+
+-relative olayı ise olduğu yerden direkt hareket ettirmeni sağlıyor
+top left falan diyerek pozisyon aldırabiliyoruz
+
+z-index olayı ise x ve y kordinatı gibi z'yi de manipüle etmek için kullanılır
+üst üste gelme durumları gibi
+
+-absolute da ise bir iç sistemin dış sisteme kendini oranlama konusu ortaya çıkıyor
+parent a göre sıfır konumları belirlenerek iç kısımdan pozisyon aldırılır
+
+
+!!!! inner sistemde absolute kullanılacaksa static kalmamasına dikkat edilmeli
+bulamazsa üst parent a giderek sınırları belirler !!!!!
+
+position muhabbetinde yer değişikliği hayali bir şekilde olur pc onu ilk 
+nerede tanımlandıysa orada varmış gibi hesaplamalarını yapar
+
+
+Gel gelelim flex box a sıkıntılı bir konu ama çokomelli
+
+flex yapısı parent içindeki child ın daha rahat konumlanmaları için kullanılan
+bir yapı
+
+sen bunu kulllanırken parent'ın display özelliğini flex yaparak gerçkeleştiriyosu
+ardından bazı sistemlerle dikeyde ve yatayda işlemlerini gerçekleştiriyosun
+
+bu özellikler parentın yani container dış tarafınıdaki yapıya atayabileceğin 
+özelliklerdi
+
+flex-direction : ana düzlemini belirtiyosun yatay veya dikey olarak default yatay geliyor
+
+justiify-content : default ayarda childların x eksaninde nasıl durmaları gerektiğini 
+belirleyen yapı
+
+aling-items : default ayarda child ların y eksaeninideki konumunu ayarladığımız yapı
+
+yukardaki iki yapı sadece pazisyonları değil duruşları ve aralarındaki mesageyi de
+değiştimek için kullanılabilir yapılardır space-.. şeklinde yazılıyorlar
+
+flex-wrap : eğer chilın genişliği ya da boyu parentın genişliği ya da boyunu geçerse
+default ayarlarda felx childın genişliğini ya da boyunu parenta sığacak şekilde
+değitiriyo 
+
+Eğer sen sığmasın gerekirse aşşağıya insin istersen bu kodun wrap özelliği ile 
+bu işlemi gerçekleştirebilirsin
+
+
+burada ise child yani içteki itemlara atayabileceğin özellileri yazıcam
+
+
+order : bu olay sırasını değiştirmeni sağlıyor 
+
+aling-self : bu da aling-items gibi çalışıyo hatta ayınıs ama sadece 
+atadığın item (child) bu durumdan etkileniyo tekil bir şekilde de 
+konumlandırabiliyosun
+
+flex-grow : bu özellikte eğer sen itemlerın parentın her yerini
+kaplamasını istiyorsan bu özelliği aynı order veriri gibi bir oran vererek
+gerçekleştiiryosun
+
+
+Responsive 101
+
+Eğer web page yapacaksan ilk olayın sadece pcye yapmamak
+
+O yüzden responsivetasarım imdada yetişiyor
+
+bu durumu gerçekleşmesi için media query gibi sistemler kullanman lazım
+@media etiletyle style etiketi altında yapıyosun
+aynı style atar gibi istediğin sistemi söyleyip sonra 
+istediğin atamayı da gerçekleştiriyon
+
+
+Responsivede en önemlisi uzaklıklar 
+px asla yok sadece latter-spacing için kullanabiliriz gerisi yok 
+em , rem , vh , vw şeklinde kullanabiliriz
+
+em : parentın font-sizeına göre oranlanıyor
+
+rem : html etiketinin default ayarına göre oranlanıyor
+
+vh : ekranın boyuna göre oranlanıyo 
+
+vw : ekranın enine göre oranlanıyo
+
+
+
+Css yukarıdan aşşağıya doğru çalışır
+alttaki üstekinin üstüne çıkar ve en son yazılan görünür
+
+f12 açılan ekran web dev toolstur
+bu ekranda elementlerin bütün özellikleri bulunuyor
+taryıcıdan tarayıcıya default özellilkler değişiyor 
+her tarayıcıda aynı görünsün diye hazır css kullanabiliriz
+computed (sanırım) bu ekran da bütün özellikler sıralanır 
+    
+console kısmı da js kodlarını denemek için kullanılır
+        
+Sources kısmı ise sayfa açılırken gerek duyduğu bütün 
+parçaları burada gösterilir
+
+

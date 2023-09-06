@@ -1,0 +1,30 @@
+Bir Css kütüphanersi 
+Farklı sınıflarıyla her işini yaptığın bir kütüphane
+
+Grid system
+Her element 12 parçadan oluşuyor
+Bu parçaları col ile bölüp oranlarını ataya biliyoruz
+
+Sanırım her elementin bir sm(small) md(medium) şeklinde etiketi var 
+Bu etiketler elementin ekran genişliğiyle değişip farklılaşmasını sağlıyor
+
+Flex Box
+Css'deki flex'in aynısı sadece class içerisinde d-flex şeklinde
+tanımlanıp ardından aling-items ve justify-content ile yatay dikey
+konularını ve flex-collum ve row ile de sıralanış şekillerini 
+belirleyebiliyoruz. 
+
+m ve p ile margin ve padding verebiliyon bak onlara onları kullan artık
+
+Card yapıları var 
+Bunlar header , body ve footerda oluşuyor 
+Çıkar ekle ne yaparsan yap resim ekle metin ekle sadece falan
+
+Table ve List yapıları hali hazırda var
+Onları ekleyerek gayet rahat kullanılıyor
+
+
+Aynı Css deki gibi formlar hali hazırda var zaten 
+Ama her oluşturduğun form elemantini bi form group'a alman lazım
+ve classları genelde form-control olmalı 
+

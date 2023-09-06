@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap Demo Feedback</title>
+
+    <style>
+        form{
+            text-align: center;
+            margin: 2em 25%;
+            line-height: 1.7em;
+            background: rgba(38, 0, 255, 0.093);
+            
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <label for="name">İsminiz : </label>
+        <input type="text" name="name" id="name"> <br><br>
+
+        <label for="surname">Soyisminiz : </label>
+        <input type="text" name="surname" id="surname"> <br> <br>
+
+        Cinsiyetiniz: <br>
+
+        Erkek
+        <input type="radio" name="gender" value="male">
+        Kadın
+        <input type="radio" name="gender" value="female">
+        Diğer
+        <input type="radio" name="gender" value="others" checked> <br> <br>
+        
+        <label for="message">Fikirleriniz : </label> <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Bize mesajınız"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Temizle">
+    </form>
+    
+</body>
+</html>

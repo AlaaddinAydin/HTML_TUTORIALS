@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Pseudo Elements</title>
+
+    <style>
+        .param1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+
+        /* .param1::first-line{
+            color: red;
+        }
+        .param1::first-letter{
+        color: blue;
+        } */
+
+        .param1::after{
+            content: "Pragaraf sonarsı";
+        }
+
+        .param1::before{
+            content: "Paragraf öncesi";/* url falan da konabilir */
+        }
+    </style>
+</head>
+
+<body>
+    <p class="param1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consectetur blanditiis deserunt velit autem,
+        fuga aspernatur nesciunt non ullam qui, aliquid porro modi adipisci officiis? Reiciendis saepe ipsum labore
+        molestiae possimus enim magni a obcaecati expedita unde dolorem eaque, at voluptatem non qui dolores vero. Eum
+        corrupti alias repellat laborum temporibus dolores excepturi numquam nihil dicta iure ullam incidunt dolorem aut
+        est consequatur aliquid nesciunt nisi, facere error accusamus eaque sit molestiae aperiam. Cum consequuntur
+        quidem expedita sit qui quasi provident dolore, impedit accusamus perspiciatis dolor numquam earum eos explicabo
+        obcaecati, enim animi, praesentium aliquid veniam quisquam deleniti eum minima?
+    </p>
+</body>
+
+</html>

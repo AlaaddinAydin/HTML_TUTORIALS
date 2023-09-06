@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms - Inputs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class="container">
+        <form style="width: 30rem;">
+            <h3>Bİlgileriniz Girin</h3>
+            <hr>
+             
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control">
+            <small class="form-text text-danger">*Please provide a Email</small>
+        </div>
+
+
+        <!-- <div class="form-group">
+            <label for="language">Diller</label>
+            <select class="form-control" id="language">
+                <option>İtalyanca</option>
+                <option selected>İngilizce</option>
+                <option>Rusça</option>
+            </select>
+        </div> -->
+
+        <div class="form-group">
+            <label for="message">Mesajınız</label>
+            <textarea class="form-control" style="resize: none;" name="message" id="message" rows="5"></textarea>
+        </div>
+
+        <!-- <div class="form-group">
+            <div class="form-check">
+                <input type="checkbox" name="accept" id="accept" class="form-check-input">
+                <label for="accept" class="form-check-label">
+                    Satış sözleşmesini okudum
+                </label>
+            </div>
+        </div> -->
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="checkbox" name="accept" id="accept" class="form-check-input">
+                        <label for="accept" class="form-check-label">
+                            Satış sözleşmesini okudum
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="language">Diller</label>
+                    <select class="form-control" id="language">
+                        <option>İtalyanca</option>
+                        <option selected>İngilizce</option>
+                        <option>Rusça</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+            <div class="d-grid gap-2 mt-2">
+                <button class="btn btn-primary" type="button">Gönder</button>
+            </div>  
+        
+        </form>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
